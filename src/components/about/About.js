@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Modal, Button } from "antd";
+import { useTranslation } from "react-i18next";
 
 function About() {
   const [visible, setVisible] = useState(false);
@@ -18,17 +19,14 @@ function About() {
     setVisible(false);
   };
 
+  const [t, i18] = useTranslation("common");
+
   return (
     <div>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        {t("home")}
       </Button>
-      <Modal
-        title="Basic Modal"
-        visible={visible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
+      <Modal title="Basic Modal" visible={visible} onOk={handleOk} onCancel={handleCancel}>
         <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
