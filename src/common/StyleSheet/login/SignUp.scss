@@ -1,0 +1,61 @@
+#sign-up-info {
+  .ant-input {
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    margin-bottom: 10px;
+  }
+  .input {
+    margin-bottom: 10px;
+  }
+  .text-name {
+    color: #606770;
+    font-size: 12px;
+  }
+  .text-name1 {
+    color: #777;;
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+  .signup-info {
+    .first-last-name {
+      display: flex;
+      justify-content: space-between;
+      .firstname {
+        margin-right: 8px;
+        .ant-input {
+          
+        }
+      }
+    }
+    .sign-up-date-flex {
+      display: flex;
+      .ant-select-selector {
+        border-radius: 6px;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+    
+  }
+  .btn-signup {
+    text-align: center;
+    .ant-btn-primary {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      background-color: #42b72a;
+      border: none;
+      border-radius: 6px;
+      padding: 7px 20px;
+      margin: 0;
+      width: 196px;
+      font-weight: 600;
+    }
+  }
+}

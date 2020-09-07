@@ -1,0 +1,40 @@
+#acc-login-info {
+  .acc-info {
+    .acc-info-input {
+      margin-bottom: 12px;
+      .ant-input {
+        font-size: 13px;
+      }
+    }
+  }
+  .checkbox-save {
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .btn-login {
+    text-align: center;
+    align-items: center;
+    .ant-btn-primary {
+      font-size: 12px;
+      background-color: #1877f2;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      margin: 0;
+      width: 252px;
+      font-weight: 600;
+    }
+  }
+  .line {
+    align-items: center;
+    border-bottom: 2px solid #dadde1;
+    display: flex;
+    margin: 10px 0 10px 0;
+    text-align: center;      
+  }
+  .btn-forgot {
+    text-align: center;
+    font-size: 13px;
+  }
+}

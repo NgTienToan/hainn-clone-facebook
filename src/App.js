@@ -1,20 +1,28 @@
 import React from "react";
-import { routes, Root } from "./routers";
+import { routes } from "./routers";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LoginScreen from "./screens/LoginScreen"
 import './App.scss'
 
 export default function App() {
   return (
-    <Router>
-      <div>
-        <Root />
-        <Switch>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
-        </Switch>
-      </div>
-    </Router>
+    <>
+      {
+        0 ? (
+          <Router>
+            <div>
+              <Switch>
+                {routes.map((route, i) => (
+                  <RouteWithSubRoutes key={i} {...route} />
+                ))}
+              </Switch>
+            </div>
+          </Router>
+        ) : (
+          <LoginScreen />
+        )
+      }
+    </>
   );
 }
 
